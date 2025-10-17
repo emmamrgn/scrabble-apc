@@ -39,33 +39,33 @@ Ce projet implémente un joueur automatique de Scrabble capable de :
 
 ```
 apcscrabble/
-├── bin/                    # Exécutables compilés
-├── obj/                    # Fichiers objets (.o)
+├── bin/                                # Exécutables compilés
+├── obj/                                # Fichiers objets (.o)
 │   ├── elements/
 │   └── gui/
-├── data/                   # Données du projet
-│   ├── dico.txt           # Dictionnaire de mots français
-│   └── exemple_arbre.tex  # Documentation de la structure
-├── src/                    # Code source
-│   ├── elements/          # Classes principales
-│   │   ├── bag.cpp/hpp        # Sac de lettres
-│   │   ├── board.cpp/hpp      # Plateau de jeu
-│   │   ├── bonus.cpp/hpp      # Gestion des bonus
-│   │   ├── letter.cpp/hpp     # Représentation des lettres
-│   │   ├── player.cpp/hpp     # Gestion des joueurs
-│   │   ├── spot.cpp/hpp       # Cases du plateau
-│   │   ├── Gaddag.cpp/hpp     # Structure GADDAG
-│   │   └── NoeudGaddag.cpp/hpp # Nœuds de l'arbre GADDAG
-│   ├── gui/               # Interface graphique (SFML)
+├── data/                               # Données du projet
+│   ├── dico.txt                        # Dictionnaire de mots français
+│   └── exemple_arbre.tex               # Documentation de la structure
+├── src/                                # Code source
+│   ├── elements/                       # Classes principales
+│   │   ├── bag.cpp/hpp                 # Sac de lettres
+│   │   ├── board.cpp/hpp               # Plateau de jeu
+│   │   ├── bonus.cpp/hpp               # Gestion des bonus
+│   │   ├── letter.cpp/hpp              # Représentation des lettres
+│   │   ├── player.cpp/hpp              # Gestion des joueurs
+│   │   ├── spot.cpp/hpp                # Cases du plateau
+│   │   ├── Gaddag.cpp/hpp              # Structure GADDAG
+│   │   └── NoeudGaddag.cpp/hpp         # Nœuds de l'arbre GADDAG
+│   ├── gui/                            # Interface graphique (SFML)
 │   │   ├── board_gui.cpp/hpp
 │   │   ├── gui.cpp/hpp
 │   │   ├── main_gui.cpp
 │   │   └── README_SFML.md
-│   ├── test_board.cpp     # Tests du plateau
-│   └── Makefile           # Fichier de compilation
-├── CMakeLists.txt         # Configuration CMake
-├── consigne.md            # Consignes du projet
-└── README.md              # Ce fichier
+│   ├── test_board.cpp                  # Tests du plateau
+│   └── Makefile                        # Fichier de compilation
+├── CMakeLists.txt                      # Configuration CMake
+├── consigne.md                         # Consignes du projet
+└── README.md                           # Ce fichier
 ```
 
 ## 🔧 Prérequis
@@ -99,7 +99,7 @@ mkdir -p bin obj/elements obj/gui
 
 ## 🔨 Compilation
 
-### Méthode 1 : Avec Make (recommandé)
+### Avec Make (recommandé)
 
 ```bash
 cd src
@@ -108,14 +108,6 @@ make test_board
 
 L'exécutable sera généré dans `../bin/test_board`
 
-### Méthode 2 : Avec CMake
-
-```bash
-mkdir build
-cd build
-cmake ..
-make
-```
 
 ### Compilation de l'interface graphique
 
@@ -258,6 +250,8 @@ Pour exécuter les tests :
 ## 👥 Contributeurs
 
 Projet réalisé dans le cadre du cours d'Algorithmique et Programmation C++ (APC).
+
+Développeur : [Emma Morgenstern](https://github.com/emmamrgn), Paolo Atzeni, Yael-Alexandre Jacob
 
 ---
 
